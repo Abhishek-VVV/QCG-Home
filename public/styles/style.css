@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background: linear-gradient(45deg ,rgba(239, 119, 237, 0.553),white) ;
+}
+.main{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    position:fixed;
+    display:flex;
+    width:100%;
+    height:10vh;
+    background: linear-gradient(20deg, black 35%,rgb(8, 3, 66) 75%,rgb(13, 5, 117) 100%);
+    justify-content: flex-start;
+    gap:100px;
+    align-items: center;
+    z-index:10;
+}
+.logo{
+    margin-left:20px;
+    width:13vw;
+}
+nav>ul{
+    display:flex;
+    gap:18px;
+    height:100%;
+    align-items: center;
+}
+nav>ul>li{
+    list-style-type: none;
+}
+nav>ul>li>a{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    padding:7px 25px 7px 25px;
+    font-size: 20px;
+    border-radius: 20px;
+    color:white;
+    text-decoration: none;
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav>ul>li>a:hover{
+    background-color:rgba(73, 78, 91, 0.663);
+        color:purple;
+}
+.dark{
+    height:30px;
+    width:70px;
+    border-radius: 15px;
+    background-color: white;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    margin-left:80px;
+    cursor:pointer;
+}
+.left{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:35px;
+    height:30px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.right{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:35px;
+    height:30px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.bg{
+    background-color: rgba(49, 49, 49, 0.39);
+}
+.sun{
+    border:2px solid rgb(0, 0, 0);
+    width:20px;
+    height:20px;
+    border-radius:10px;
+    background-color: rgb(0, 0, 0);
+}
+.moon{
+    width:20px;
+}
+.background{
+    position:fixed;
+    top:10vh;
+    height:90vh;
+    width:100%;
+    background-image: url("https://cdn.pixabay.com/photo/2024/06/04/09/12/ai-8808164_1280.png");
+    background-size: cover;
+    background-position: center;
+    filter:brightness(0.4);
+    z-index:-1;
+}
+.page1{
+    height:100vh;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hello{
+    font:lighter 4rem "Ubuntu", serif;
+    color:white;
+}
+.qcg>span{
+    font:bolder 5rem "Ubuntu", serif;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(20deg, cyan , magenta);
+    -webkit-background-clip: text;
+}
+.typing{
+    display:flex;
+    gap:6px;
+}
+.work{
+    font:bold 3rem "Ubuntu", serif;
+    color:white;
+}
+.key{
+    display:flex;
+    flex-direction: column;
+    height:52px;
+    
+    background-color: brown;
+    list-style-type: none;
+    overflow: hidden;
+    animation:cursor 0.8s step-end infinite,
+              typing 3s infinite alternate;   
+}
+.key>li>span{
+    color:white;
+    display:inline-block;
+}
+.key>li{
+    animation:translate calc(7*3*2)s  infinite;
+}
+.key>li>span>h1{
+    display:inline-block;
+    border-right:0.4rem solid white;
+    font:bold 3rem "Ubuntu", serif;
+}
+@keyframes cursor{
+    50%{border-color:transparent;}
+}
+@keyframes translate{
+    50%{
+        transform: translateY(-700%);
+    }
+}
+@keyframes typing{
+    0%,10%{
+        width:0%;
+    }
+    70%,100%{
+        width:20%;
+    }
+}
