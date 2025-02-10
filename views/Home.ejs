@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QCG-Home</title>
+    <link rel="icon" href="/assets/images/QCGmainLOGO1-removebg_new.png" type="image/x-icon">
+    <title>Home | QCG</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -12,10 +13,11 @@
 </head>
 
 <body>
-    <div class="main">
+    <!-- <div class="main"> -->
         <nav>
             <a href="/"><img class="logo" src="/assets/images/Nav-logo.png" alt=""></a>
-            <ul>
+            <ul class="unlist move-left">
+                <img class="close" src="/assets/images/close.svg" alt="">
                 <li><a style ="text-decoration: underline;" href="/">Home</a></li>
                 <li><a href="https://qcg.iitr.ac.in/events.html">Events</a></li>
                 <li><a href="https://github.com/qcgiitr">GitHub</a></li>
@@ -28,13 +30,13 @@
                 <div class="left bg"><div class="sun"></div></div>
                 <div class="right"><img class="moon" src="/assets/images/moon.png" alt=""></div>
             </div>
+            <div class="side"><img src="/assets/images/bar1.svg" alt=""></div>
         </nav>
         <div class="background">
-
         </div>
         <div class="page1">
-            <span class="hello">Hello, we are</span>
-            <span class="qcg"><span>QCG IIT Roorkee</span></span>
+            <div class="hello">WELCOME TO</div>
+            <div class="qcg"><div>QCG IIT Roorkee</div></div>
             <div class="typing">
                 <h1 class="work">We work on Quantum </h1>
                 <ul class="key">
@@ -43,13 +45,82 @@
                     <li><span><h1>Communication</h1></span></li>
                     <li><span><h1>Cryptography</h1></span></li>
                     <li><span><h1>Hardware</h1></span></li>
-                    <li><span><h1>Machine Learning</h1></span></li>
                     <li><span><h1>Computing</h1></span></li>
                 </ul>
             </div>
         </div>
-    </div>
+        <div class="page2">
+            <div class="qcg-img"><img src="/assets/images/QCGmainLOGO1-removebg_new.png" alt=""></div>
+            <div class="About">
+                <div class="upper">About us</div>
+                <div class="middle"><div class="line bg-black"></div>who we are <div class="line bg-black"></div></div>
+                <div class="middle-down">We work around Quantum
+                    <ul class="hey">
+                        <li><span><h1>Information</h1</span></li>
+                        <li><span><h1>Algorithms</h1></span></li>
+                        <li><span><h1>Communication</h1></span></li>
+                        <li><span><h1>Cryptography</h1></span></li>
+                        <li><span><h1>Hardware</h1></span></li>
+                        <li><span><h1>Computing</h1></span></li>
+                    </ul>
+                </div>
+                <div class="lower">Quantum Computing Group is a student-run group to inculcate and uplift the culture of quantum computing at IIT Roorkee. Founded in 2020, QCG is currently a part of ACM IIT Roorkee Student Chapter. Our members have varied interests and skills in different domains of quantum computing and attempt to elevate the technological standing of the campus populace in those specialisations. We do so by organising concept discussions, hands-on workshops, open projects and an annual quantum computing hackathon that gives the students exposure to the advancements in the quantum computing sphere.</div>
+            <div class="horizontal">
+                <div class="button"><img class="social" src="/assets/images/connect2.png" alt=""></div>
+                <div class="media">
+                    <a href="https://www.linkedin.com/company/qcgiitr/"><svg id="linkedin" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px">    <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/></svg></a>
+                    <a href="https://www.instagram.com/qcgiitr/"><svg id="insta" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="50px" height="50px">    <path d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"/></svg></a>
+                    <a href="https://www.facebook.com/qcgiitr/"><svg id="fb" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px">    <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"/></svg></a>
+                    <a href="https://x.com/qcgiitr"><svg id="twitter" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z"/></svg></a>
+                    <a href="https://medium.com/@qcgiitr"><svg id="medium" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 18 41.578125 C 18 42.46875 17.523438 43 16.847656 43 C 16.609375 43 16.34375 42.933594 16.0625 42.792969 L 5.164063 37.273438 C 4.523438 36.949219 4 36.089844 4 35.367188 L 4 8.3125 C 4 7.597656 4.378906 7.175781 4.921875 7.175781 C 5.113281 7.175781 5.328125 7.226563 5.550781 7.339844 L 5.933594 7.535156 C 5.933594 7.535156 5.9375 7.535156 5.9375 7.535156 L 17.949219 13.617188 C 17.96875 13.628906 17.984375 13.648438 18 13.664063 Z M 30.585938 8.882813 L 31.320313 7.675781 C 31.582031 7.246094 32.0625 7 32.550781 7 C 32.664063 7 32.78125 7.015625 32.894531 7.046875 C 32.980469 7.066406 33.070313 7.097656 33.164063 7.144531 L 45.832031 13.558594 C 45.835938 13.558594 45.835938 13.5625 45.835938 13.5625 L 45.847656 13.566406 C 45.855469 13.570313 45.855469 13.582031 45.863281 13.585938 C 45.925781 13.636719 45.953125 13.722656 45.910156 13.792969 L 33.292969 34.558594 L 32.003906 36.675781 L 23.644531 20.304688 Z M 20 30.605469 L 20 17.5625 L 28.980469 35.15625 L 20.902344 31.066406 Z M 46 41.578125 C 46 42.414063 45.503906 42.890625 44.773438 42.890625 C 44.445313 42.890625 44.070313 42.796875 43.675781 42.597656 L 41.867188 41.679688 L 33.789063 37.589844 L 46 17.496094 Z"/></svg></a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="page3">
+            <div class="initiatives">Our initiatives</div>
+            <div class="organise"><div class="dot"></div>what we organize<div class="dot"></div></div>
+            <div class="box">
+                <div class="boxx"><div class="inner"><img src="/assets/images/comments.svg" alt="">Discussions</div><div class="text hidden"><span class="big">Discussions</span>We conduct regular discussions on various topics of quantum computing, open for all our quantum enthusiasts.</div></div>
+                <div class="boxx"><div class="inner"><img src="/assets/images/blog.svg" alt="">Blogs</div><div class="text hidden"><span class="big">Blogs</span>Check out the blogs written by our members, exploring different concepts in quantum computing.</div></div>
+                <div class="boxx"><div class="inner"><img src="/assets/images/desktop.svg" alt="">Projects</div><div class="text hidden"><span class="big">Projects</span>A diverse range of open projects are released every year, allowing students to expand their knowledge.</div></div>
+                <div class="boxx"><div class="inner"><img src="/assets/images/workshops.svg" alt="">Workshops</div><div class="text work hidden"><span class="big">Workshops</span>We conduct multiple workshops throughout the year to give the student community a hands-on experience with quantum computing.</div></div>
+                <div class="boxx"><div class="inner"><img src="/assets/images/hacker.svg" alt="">Hackathons</div><div class="text hidden"><span class="big">Hackathons</span>QCG conducts a quantum hackathon every year, giving students a platform to innovate and work on interesting projects.</div></div>
+                <div class="boxx"><div class="inner"><img src="/assets/images/updates.svg" alt="">QBytes</div><div class="text hidden"><span class="big">QBytes</span>QBytes are interesting facts and information from around the world to keep you updated with this constantly advancing field.</div></div>
+            </div>
+        </div>
+        <div class="page4">
+            <div class="initiatives">Contact Us</div>
+            <div class="organise"><div class="dot2 bg-black"></div>get in touch<div class="dot2 bg-black"></div></div>
+            <div class="down">
+                <div class="left2">
+                    <div class="details">
+                        <p>Get in touch</p>
+                        <div class="queries">If you have any queries or would like to collaborate for events, feel free to contact us by email, and we will get back to you as soon as possible. <hr></div>
+                        <div class="start">
+                            <div class="address">
+                                <img src="/assets/images/location.svg" alt="">
+                                <div class="queries"><h3>Address</h3><p>Room No. 109, Students Activity Centre, IIT Roorkee, India</p></div>
+                            </div>
+                            <div class="email">
+                                <img src="/assets/images/mail.svg" alt="">
+                                <div class="queries"><h3>Email</h3><p class="wrap">qcg[DOT]acm[AT]iitr.ac.in</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <form action="/" method="post">
+                            <textarea class="enter" name="text" placeholder="Please enter your feedback"></textarea>
+                            <input class="submit" type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="right2"><div id="map"></div></div>
+            </div>
+        </div>
+    <!-- </div> -->
     <script src="/scripts/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC908SRWCoE00V3ynJ7ziv8fg8yMG47yrY&callback=initMap" async defer></script>
 </body>
 
 </html>
