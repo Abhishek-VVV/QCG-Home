@@ -31,6 +31,8 @@ QCG-HOME-PAGE/
    git clone <repo_url>
    cd QCG-HOME-PAGE
 
+2. install node_module folder using command npm install
+
 
 ## Usage
 
